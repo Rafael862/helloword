@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap'); /*h1 e h2*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Suez+One&display=swap'); /*letra para as legendas das imagens*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Crimson+Pro:wght@300&family=Suez+One&display=swap');
+p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15pt;
+    font-weight: bold;
+}
+body {
+    background-color: rgb(255, 123, 0);
+}
+span {
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1, h2 {
+    font-family: 'Suez One', serif;
+}
+
+h3 {
+    font-size: 25pt;
+}
+
+ul#album-fotos {
+    width: 900px; /*largura*/
+    margin: 0 auto;
+    padding: 45px; /*margem superior*/
+    overflow: hidden;
+    list-style: none; /*tira os pontos de listagem*/
+}
+ ul#album-fotos li {
+     float: left; /*flutuação a esquerda*/
+     width: 200px; /*largura do quadrante*/
+     height: 200px; /*altura do quadrante*/
+     margin: 10px; /*margem entre os quadrantes*/
+     border: 5px solid rgb(0, 0, 0); /*borda entre a imagem e o quadrante*/
+     background-color: #ffffff; /*fundo do quadrante*/
+     box-shadow: 3px 3px 3px rgba(0, 0, 0, .8);  /*bordas do quadrante*/
+     
+     transition: ease-in all .3s; /*este faz a transição de imagem para aumentar o tamanho*/
+
+ }
+ul#album-fotos li span {
+    opacity: 0; /*para esconder as palavras*/
+    color: rgb(255, 255, 255); /*cor das palavras descritivas*/
+    text-shadow: 2px 2px 2px #000000; /*sombreamento das palavras da descrição*/
+    background-color: rgba(0, 0, 0, 0.5); /*fundo por tras da descrição*/
+    font-size: 18pt; /*tamanho da fonte*/
+    line-height: 45px; /*posição da legenda da foto*/
+    padding: 5px; /*contorno no sombreamento da fonte*/
+}
+ul#album-fotos li:hover {
+    transform: scale(1.5); /*este faz crescer a imagem*/
+}
+ul#album-fotos li:hover span {
+    opacity: 1; /*ao passar o mouse por cima a opacidade fica em 1 fazendo ficar visivel*/
+}
+
+ ul#album-fotos li#istreet {
+     background: url('../midia/street2.jpeg') no-repeat; /*imagem*/
+     background-position: 50% 50%;
+     background-size: 300px 300px; /*tamanho da imgem dentro do quadrante*/
+     background-color: rgb(255, 255, 255);
+ }
+ ul#album-fotos li#istreet:hover {
+     background-position: 0px 0px; /*posição da imgem dentro do quadrante*/
+     background-size: 200px 200px; /*faz o efeito de reduzir a imagem na tela de acordo com o tamanho desejado*/
+ }
+
+ ul#album-fotos li#inaked {
+    background: url('../midia/naked2.jpeg') no-repeat; /*imagem*/
+    background-position: 50% 50%;
+    background-size: 350px 350px; /*tamanho da imgem dentro do quadrante*/
+    background-color: rgb(255, 255, 255);
+}
+ul#album-fotos li#inaked:hover {
+    background-position: 0px 0px; /*posição da imgem dentro do quadrante*/
+    background-size: 200px 200px; /*faz o efeito de reduzir a imagem na tela de acordo com o tamanho desejado*/
+}
+
+ul#album-fotos li#iscooter {
+    background: url('../midia/scooter2.jpeg') no-repeat; /*imagem*/
+    background-position: 50% 50%;
+    background-size: 300px 300px; /*tamanho da imgem dentro do quadrante*/
+    background-color: rgb(255, 255, 255);
+}
+ul#album-fotos li#iscooter:hover {
+    background-position: 0px 0px; /*posição da imgem dentro do quadrante*/
+    background-size: 200px 200px; /*faz o efeito de reduzir a imagem na tela de acordo com o tamanho desejado*/
+}
+
+ul#album-fotos li#icustom {
+    background: url('../midia/custom2.jpeg') no-repeat; /*imagem*/
+    background-position: 50% 50%;
+    background-size: 450px 450px; /*tamanho da imgem dentro do quadrante*/
+    background-color: rgb(255, 255, 255);
+}
+ul#album-fotos li#icustom:hover {
+    background-position: 0px 0px; /*posição da imgem dentro do quadrante*/
+    background-size: 200px 200px; /*faz o efeito de reduzir a imagem na tela de acordo com o tamanho desejado*/
+}
+
+ul#album-fotos li#iesportiva {
+    background: url('../midia/esportiva2.jpeg') no-repeat; /*imagem*/
+    background-position: 50% 50%;
+    background-size: 300px 300px; /*tamanho da imgem dentro do quadrante*/
+    background-color: rgb(255, 255, 255);
+}
+ul#album-fotos li#iesportiva:hover {
+    background-position: 0px 0px; /*posição da imgem dentro do quadrante*/
+    background-size: 200px 200px; /*faz o efeito de reduzir a imagem na tela de acordo com o tamanho desejado*/
+}
+
+ul#album-fotos li#ibigtrail {
+    background: url('../midia/bigtrail2.jpeg') no-repeat; /*imagem*/
+    background-position: 50% 50%;
+    background-size: 380px 380px; /*tamanho da imgem dentro do quadrante*/
+    background-color: rgb(255, 255, 255);
+}
+ul#album-fotos li#ibigtrail:hover {
+    background-position: 0px 0px; /*posição da imgem dentro do quadrante*/
+    background-size: 200px 200px; /*faz o efeito de reduzir a imagem na tela de acordo com o tamanho desejado*/
+}
+
+ul#album-capacetes {
+    width: 500px;
+    margin: 0 auto;
+    padding: 45px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-capacetes li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .9);
+    transition: ease-in .3s;
+}
+
+ul#album-capacetes span {
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18pt;
+    line-height: 45px;
+    padding: 5px;
+}
+ul#album-capacetes li:hover {
+    transform: scale(1.5);
+}
+
+ul#album-capacetes li:hover span{
+    opacity: 1;
+}
+
+ul#album-capacetes li#cfechado {
+    background: url('../midia/fechado2.jpeg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+}
+
+ul#album-capacetes li#cfechado:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-capacetes li#cescamoteavel {
+    background: url('../midia/escamoteavel2.jpeg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+}
+
+ul#album-capacetes li#cescamoteavel:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-capacetes li#caberto {
+    background: url('../midia/aberto2.jpeg') no-repeat;
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+
+ul#album-capacetes li#caberto:hover {
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+}
+
+ul#album-capacetes li#coff-road {
+    background: url('../midia/offroad2.jpeg') no-repeat;
+    background-position: 0px 0px;
+    background-size: 300px 300px;
+}
+
+ul#album-capacetes li#coff-road:hover {
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+}
